@@ -15,7 +15,6 @@ dubbo:
     name: dubbo
     port: 12223
   metadata-report:
-    address: N/A
     report-metadata: false
 
   filters:
