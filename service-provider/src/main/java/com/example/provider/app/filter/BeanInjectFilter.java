@@ -1,6 +1,5 @@
 package com.example.provider.app.filter;
 
-import com.example.provider.app.config.BeanProperties;
 import com.example.provider.app.config.BeanToInject;
 import org.apache.dubbo.common.extension.Activate;
 import org.apache.dubbo.rpc.*;
