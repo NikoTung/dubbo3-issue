@@ -1,0 +1,27 @@
+spring:
+  main:
+    web-application-type: servlet
+
+  application:
+    name: service-provider
+dubbo:
+  application:
+    name: ${spring.application.name}
+    register-mode: instance
+    qos-enable: false
+  registry:
+    address: nacos://127.0.0.1:8848
+  protocol:
+    name: dubbo
+    port: 12223
+  metadata-report:
+    address: N/A
+    report-metadata: false
+
+  filters:
+    enabled: true
+
+
+
+config:
+  enabled: true
