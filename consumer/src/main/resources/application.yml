@@ -19,5 +19,7 @@ dubbo:
     port: -1
   registry:
     address: nacos://127.0.0.1:8848
+    parameters:
+      register-consumer-url: true
 server:
   port: 8801

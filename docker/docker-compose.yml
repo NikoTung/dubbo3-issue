@@ -33,6 +33,8 @@ services:
     environment:
       JAVA_OPTS: -Ddubbo.registry.address=nacos://nacos-standalone-mysql:8848 -Ddubbo.metadata-report.report-metadata=false
       DUBBO_REGISTRY_ADDRESS: "nacos://nacos-standalone-mysql:8848"
+    ports:
+      - "12223:12223"
     depends_on:
       - "nacos"
 
@@ -45,4 +47,5 @@ services:
     ports:
       - "8801:8801"
     depends_on:
+      - "nacos"
       - "provider"
